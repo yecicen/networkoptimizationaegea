@@ -1,8 +1,8 @@
 # networkoptimizationaegea
 network optimization on Aegean Cities with Dijsktra's shorthest path algorithm
 
-##Problem Definition 
-Aegean Region has eight cities and there is distances between them. We as a citizen of İzmir city, we wonder that what is the shortest distance for all those cities from İzmir. Therefore we created network that represents cities of Aegean Region. Then we applied Dijsktra’s Shortest Path Algorithm for our network. The solution as follows:
+## Problem Definition 
+>Aegean Region has eight cities and there is distances between them. We as a citizen of İzmir city, we wonder that what is the shortest distance for all those cities from İzmir. Therefore we created network that represents cities of Aegean Region. Then we applied Dijsktra’s Shortest Path Algorithm for our network. The solution as follows:
 [ izmir     manisa      aydın     uşak         denizli       muğla     afyon      kütahya ]
 [ 0*             ∞              ∞           ∞               ∞              ∞             ∞             ∞  ] 
 d(2)=min {∞,d(1)+c12} =  39km*
@@ -27,8 +27,8 @@ d(8)=min {405,d(4)+c48} = min{ 405, 216+141 } = 357km
 d(8)=min {357,d(7)+c78} = min { 357, 327+96 } = 357km*
 [ 0*            39*           180*        216*         255*         316*         327*        357* ]
 
-The shortest path problem can be solved as a minimum cost flow problem: Send unit flow from the source node s to every other node in the network[1]
-##Decision variables:
+**The shortest path problem can be solved as a minimum cost flow problem: Send unit flow from the source node s to every other node in the network**
+## Decision variables:
 xij = boolean, is there path from node i to j
 cij = distance from node i to j
 
